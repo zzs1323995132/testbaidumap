@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zzs.testbaidumap.activity.RoutemapActivity">
+
+    <EditText
+        android:id="@+id/et_activity_routemap_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入起点" />
+
+    <EditText
+        android:id="@+id/et_activity_routemap_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入终点" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_activity_routemap_driving"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:text="驾车" />
+
+        <Button
+            android:id="@+id/btn_activity_routemap_walking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:text="步行" />
+
+        <Button
+            android:id="@+id/btn_activity_routemap_bus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickButton"
+            android:text="公交" />
+    </LinearLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mv_activity_routemap"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+</LinearLayout>

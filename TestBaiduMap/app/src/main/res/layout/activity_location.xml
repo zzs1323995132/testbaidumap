@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zzs.testbaidumap.activity.LocationActivity">
+    <!--添加百度地图布局-->
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mv_actovity_location"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+</RelativeLayout>
