@@ -32,7 +32,7 @@ public class BuselineActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buseline);
-        //初始化视图
+        //.初始化视图
         initView();
     }
 
